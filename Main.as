@@ -92,7 +92,7 @@
 			
 			videoPlaying = false;
 			
-			positionVideo();
+			PositionVideo();
 		}
 		
 		private function setupButton()
@@ -140,7 +140,7 @@
 			{
 				this.portraitMode = false;
 			}
-			positionVideo();
+			PositionVideo();
 		}
 
 		private function PositionVideo()

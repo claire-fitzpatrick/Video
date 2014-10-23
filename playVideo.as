@@ -12,7 +12,7 @@
 
 	public class playVideo extends Sprite
 	{
-		private var starling: Starling;
+		private var starling:Starling;
 
 		public function playVideo()
 		{
@@ -32,14 +32,14 @@
 			starling.start();
 		}
 		
-		private function stageResized(e: Event): void
+		private function stageResized(e: Event):void
 		{
 			starling.stage.stageWidth = this.stage.stageWidth;
 			starling.stage.stageHeight = this.stage.stageHeight;
 			const viewPort: Rectangle = starling.viewPort;
 			viewPort.width = this.stage.stageWidth;
 			viewPort.height = this.stage.stageHeight;
-			starling.viewPort = viewPort
+			starling.viewPort = viewPort;
 		}
 
 	}

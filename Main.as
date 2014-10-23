@@ -78,7 +78,7 @@
 		
 		private function setupVideo()
 		{
-			var nc.NetConnection = new NetConnection();
+			var nc:NetConnection = new NetConnection();
 
 			nc.connect(null);
 
@@ -152,7 +152,7 @@
 					video.height = this.height - controlButton.height - 5 - 10;
 					video.scaleX = video.scaleY;
 
-					video.x = (this.width - video.width) / 2;
+					video.x = (this.width - video.width)/ 2;
 					video.y = 5;
 				}
 				else
@@ -167,17 +167,17 @@
 
 
 		}
-		public function onMetaData(infoObject: Object)
+		public function onMetaData(infoObject:Object)
 		{
 			trace("onMetaData invoked...");
 		}
 
-		public function onXMPData(infoObject: Object)
+		public function onXMPData(infoObject:Object)
 		{
 			trace("onXMPData invoked...");
 		}
 
-		public function onCuePoint(infoObject: Object)
+		public function onCuePoint(infoObject:Object)
 		{
 			trace("onCuePoint invoked...");
 		}

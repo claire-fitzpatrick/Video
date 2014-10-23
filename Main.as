@@ -147,7 +147,7 @@
 		{
 			if (video != null)
 			{
-				if (!portraitMode)
+				if (! portraitMode)
 				{
 					video.height = this.height - controlButton.height - 5 - 10;
 					video.scaleX = video.scaleY;
